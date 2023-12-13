@@ -1,0 +1,136 @@
+:root {
+	--Light-Pink: #f8eeff;
+	--Dark-Purple: #301534;
+	--Pink: #ad28eb;
+	--White: #fff;
+	--Pale-Purple: #8b6990;
+	--Light-Pink: #f8eeff;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('assets/fonts/WorkSans-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'WorkSans';
+	src: url('assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--Light-Pink);
+	font-family: 'WorkSans';
+	color: var(--Dark-Purple);
+}
+
+.purple-section {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 320px;
+	background-color: var(--Dark-Purple);
+}
+
+.stroke {
+	position: fixed;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0 24px 0 24px;
+}
+
+.card {
+	background-color: var(--White);
+	width: 600px;
+	padding: 40px;
+	z-index: 1;
+	border-radius: 16px;
+	box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
+}
+
+.header {
+	display: flex;
+	font-size: 56px;
+	font-weight: 700;
+	color: var(--Dark-Purple);
+	margin-bottom: 32px;
+}
+
+.star {
+	margin-right: 24px;
+}
+
+.break {
+	height: 1px;
+	background-color: var(--Light-Pink);
+}
+
+.question {
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	letter-spacing: 1px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.question:hover {
+	color: var(--Pink);
+}
+
+.answer {
+	color: var(--Pale-Purple);
+	line-height: 150%;
+	font-style: normal;
+	letter-spacing: 1px;
+	display: none;
+	margin-bottom: 20px;
+}
+
+.icon {
+	margin-left: 24px;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 11px;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
