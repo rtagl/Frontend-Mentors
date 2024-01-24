@@ -1,0 +1,99 @@
+:root {
+	--green: hsl(75, 94%, 57%);
+	--white: hsl(0, 0%, 100%);
+	--grey: hsl(0, 0%, 20%);
+	--dark-grey: hsl(0, 0%, 12%);
+	--off-black: hsl(0, 0%, 8%);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* This ensures padding is included in an element's total width and height */
+}
+
+body {
+	font-family: 'Inter';
+	background-color: var(--off-black);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.card {
+	text-align: center;
+	color: var(--white);
+	width: 384px;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 40px;
+	border-radius: 12px;
+	background-color: var(--dark-grey);
+}
+
+.card img {
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.buttons {
+	gap: 24px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card button {
+	color: var(--white);
+	font-size: 14px;
+	font-weight: 700;
+	padding: 12px;
+	border: none;
+	background-color: var(--grey);
+	border-radius: 8px;
+}
+
+.header-name {
+	font-size: 24px;
+	line-height: 150%;
+}
+
+.location {
+	color: var(--green);
+	font-style: normal;
+	font-weight: 700;
+	line-height: 150%;
+}
+
+.quote {
+	font-weight: 400;
+}
+
+@media (max-width: 375px) {
+	.card {
+		padding: 24px;
+		width: 327px;
+	}
+	.buttons {
+		gap: 12px;
+	}
+}
+
+button:hover {
+	background-color: var(--green);
+	color: var(--grey);
+	cursor: pointer;
+}
+
+.attribution {
+	color: var(--grey);
+	position: absolute;
+	bottom: 0;
+}
