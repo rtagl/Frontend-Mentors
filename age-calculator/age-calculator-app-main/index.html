@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      <form id="formId">
+        <div class="inputs">
+          <div class="input">
+            <label for="day">DAY</label>
+            <input type="number" id="day" name="day" min="1" max="31" placeholder="DD">
+          </div>
+
+          <div class="input">
+            <label for="month">MONTH</label>
+            <input type="number" id="month" name="month" min="1" max="12" placeholder="MM">
+          </div>
+
+          <div class="input">
+            <label for="year">YEAR</label>
+            <input type="number" id="year" max="2023" name="date" placeholder="YYYY">
+          </div>
+
+        </div>
+        <div class="divider">
+          <button type="submit" class="down-arrow"><img src="/assets/images/icon-arrow.svg"
+              alt="icon-arrow">
+          </button>
+
+        </div>
+      </form>
+      <div class="results">
+        <div><span class="value" id="year-value">--</span> years</div>
+        <div><span class="value" id="months-value">--</span> months</div>
+        <div><span class="value" id="days-value">--</span> days</div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
+      Coded by <a href="#">Riccardo Taglietti</a>.
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>

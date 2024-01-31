@@ -1,0 +1,164 @@
+:root {
+	--Purple: hsl(259, 100%, 65%);
+	--Light-red: hsl(0, 100%, 67%);
+	--White: hsl(0, 0%, 100%);
+	--Off-white: hsl(0, 0%, 94%);
+	--Light-grey: hsl(0, 0%, 86%);
+	--Smokey-grey: hsl(0, 1%, 44%);
+	--Off-black: hsl(0, 0%, 8%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 32px;
+	background-color: var(--Off-white);
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	background-color: var(--White);
+	width: 700px;
+	height: 500px;
+	padding: 40px;
+	border-radius: 20px 20px 150px 20px;
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 125px;
+}
+
+label {
+	margin-left: 2px;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: var(--Smokey-grey);
+}
+
+input {
+	width: 120px;
+	border: 1px solid var(--Light-grey);
+	border-radius: 5px;
+	font-weight: 700;
+	padding: 15px;
+	color: var(--Off-black);
+	margin-top: 5px;
+	font-size: 26px;
+}
+
+button {
+	border: none;
+}
+
+input::placeholder {
+	color: var(--Light-grey);
+}
+
+.divider {
+	position: relative;
+	margin: 45px 0;
+	height: 1px;
+	width: 100%;
+	background-color: var(--Light-grey);
+}
+
+.down-arrow {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 0;
+	top: -35px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: var(--Purple);
+}
+
+.down-arrow:hover {
+	background-color: var(--Off-black);
+	cursor: pointer;
+}
+
+.results {
+	display: flex;
+	flex-direction: column;
+	font-size: 48px;
+	color: var(--Off-black);
+}
+
+.value {
+	font-size: 60px;
+	color: var(--Purple);
+}
+
+@media screen and (max-width: 768px) {
+	.calculator {
+		width: 80%;
+		padding: 20px;
+	}
+	.inputs {
+		margin-right: 0;
+	}
+
+	input {
+		width: 100px;
+		padding: 10px;
+		font-size: 22px;
+	}
+	.down-arrow {
+		width: 50px;
+		height: 50px;
+		left: 50%;
+		top: 0px;
+		transform: translateY(-50%) translateX(-50%);
+	}
+	.down-arrow img {
+		width: 30px;
+		height: 30px;
+	}
+	.results {
+		font-size: 36px;
+	}
+	.value {
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	input {
+		width: 85px;
+		padding: 8px;
+		font-size: 20px;
+	}
+	.results {
+		font-size: 40px;
+	}
+}
+
+.attribution {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
