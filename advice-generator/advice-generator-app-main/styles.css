@@ -1,0 +1,112 @@
+:root {
+	--light-cyan: hsl(193, 38%, 86%);
+	--neon-green: hsl(150, 100%, 66%);
+	--grayish-blue: hsl(217, 19%, 38%);
+	--dark-grayish-blue: hsl(217, 19%, 24%);
+	--dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 28px;
+	font-family: 'Manrope';
+	background-color: var(--dark-blue);
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.card {
+	position: relative;
+	font-weight: 800;
+	width: 343px;
+	padding: 32px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: var(--dark-grayish-blue);
+}
+
+.adviceId {
+	color: var(--neon-green);
+	font-size: 11px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+.quote {
+	font-size: 20px;
+	font-weight: 700;
+	color: var(--light-cyan);
+	letter-spacing: 1px;
+	line-height: 35px;
+	margin-bottom: 20px;
+}
+
+.divider {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.pattern-divider {
+	height: 20px;
+	width: 100%;
+	background-image: url('/images/pattern-divider-mobile.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.getQuoteBtn {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--neon-green);
+	border: none;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.getQuoteBtn:hover {
+	box-shadow: 0 0 30px rgba(76, 255, 149, 0.7);
+}
+
+@media (min-width: 600px) {
+	/* CSS rules here will apply to screens wider than 600 pixels */
+	.card {
+		width: 450px;
+	}
+}
+
+.attribution {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
