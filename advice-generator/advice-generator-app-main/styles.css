@@ -94,6 +94,9 @@ body {
 	.card {
 		width: 450px;
 	}
+	.pattern-divider {
+		background-image: url('./images/pattern-divider-desktop.svg');
+	}
 }
 
 .attribution {
