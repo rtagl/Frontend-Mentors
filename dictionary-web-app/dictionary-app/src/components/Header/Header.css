@@ -1,0 +1,16 @@
+.toggle-container {
+	position: relative; /* Ensures that the toggle circle can be positioned absolutely within */
+}
+
+.toggle-circle {
+	left: 1px; /* Small offset to keep the circle inside the container */
+	top: 0.125rem; /* Aligns the circle vertically centered in the container, adjust as needed */
+}
+
+.toggle-circle.toggle-right {
+	transform: translateX(
+		calc(100% - 1.25rem)
+	); /* Moves the circle to the right */
+	right: 1px; /* Aligns the circle inside the container on the right */
+	left: auto; /* Resets the left property when toggled */
+}

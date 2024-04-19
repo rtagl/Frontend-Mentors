@@ -1,0 +1,20 @@
+.select-container {
+	position: relative;
+	display: inline-block;
+}
+
+.select-container select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+	padding-right: 10px;
+}
+
+.select-container img {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+}
