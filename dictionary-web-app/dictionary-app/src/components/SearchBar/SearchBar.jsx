@@ -12,7 +12,7 @@ const SearchBar = ({ fetchData }) => {
 	};
 
 	return (
-		<div>
+		<div className="mb-6">
 			<div className="relative">
 				<form onSubmit={handleSubmit}>
 					<input
