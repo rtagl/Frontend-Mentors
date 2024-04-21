@@ -24,7 +24,9 @@ function App() {
 
 	return (
 		<>
-			<div className="container p-6" style={{ fontFamily: font }}>
+			<div
+				className="container w-80 p-6 md:w-4/6 lg:max-w-4xl"
+				style={{ fontFamily: font }}>
 				<Header />
 				<SearchBar fetchData={fetchData} />
 				<div className="word flex justify-between items-center mb-3">
