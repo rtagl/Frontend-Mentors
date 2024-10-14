@@ -1,0 +1,80 @@
+.card {
+	background: var(--white);
+	max-width: 100%;
+	width: 384px;
+	border-radius: 20px;
+	padding: 24px;
+	color: var(--gray-950);
+	box-shadow: black 8px 8px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.card > * {
+	margin-bottom: 24px;
+}
+
+.card > *:last-child {
+	margin-bottom: 0px;
+}
+
+.illustration {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.category {
+	display: inline-block;
+	background-color: var(--yellow);
+	padding: 4px 12px;
+	font-weight: 700;
+	border-radius: 4px;
+}
+
+.headline:hover {
+	color: var(--yellow);
+	cursor: pointer;
+}
+
+.content > * {
+	margin-bottom: 12px;
+}
+
+.content > *:last-child {
+	margin-bottom: 0;
+}
+
+.description {
+	color: var(--gray-500);
+}
+
+.author {
+	display: flex;
+	align-items: center;
+}
+
+.author img {
+	width: 32px;
+	height: 32px;
+}
+
+.author p {
+	font-weight: 700;
+	margin-left: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		width: 327px;
+	}
+	.card .figtree-extra-bold {
+		font-size: 20px;
+	}
+	.card .figtree-medium-14 {
+		font-size: 12px;
+	}
+	.card .figtree-medium-16 {
+		font-size: 14px;
+	}
+}

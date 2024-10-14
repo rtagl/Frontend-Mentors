@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'FigTree';
+	src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'FigTree';
+	src: url('./assets/fonts/Figtree-Italic-VariableFont_wght.ttf')
+		format('truetype');
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url('./assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--yellow: #f4d04e;
+	--gray-950: #111111;
+	--gray-500: #6b6b6b;
+	--white: #ffffff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'FigTree', sans-serif;
+	background: var(--yellow);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.figtree-extra-bold {
+	font-weight: 800; /* Extra Bold weight */
+	font-size: 24px;
+	line-height: 150%;
+	letter-spacing: 0px;
+}
+
+.figtree-medium-16 {
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0px;
+}
+
+.figtree-medium-14 {
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 0px;
+}
+
+.figtree-extra-bold-16 {
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0px;
+}
